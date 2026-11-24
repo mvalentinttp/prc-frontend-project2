@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+	margin: 0;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	font-family: "IBM Plex Serif";
+	background-color:  #FAF6EE;
+	color: #1D1F21;
+}
+
+header {
+	display: flex;
+	padding: 2rem;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #1D1F21;
+	color: #FAF6EE;
+}
+
+h1 {
+	font-family: "Fredericka the Great";
+	text-transform: uppercase;
+}
+
+nav {
+	display: flex;
+	gap: .5rem;
+}
+
+nav a {
+	color: #FFF5F7;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+main {
+	flex: 1;
+	width: 600px;
+	height: auto;
+	margin: 2em auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 1rem;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+	padding: 1rem;
+	gap: 1rem;
+}
+
+article img {
+	max-width: 150px;
+}
+
+article a, section a {
+	color: #4A525D;
+}
+
+section {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+section p {
+	text-align: center;
+}
+
+section ul {
+	
+}
+
+section img {
+	max-width: 50%;
+	height: auto;
+}
+
+footer {
+	background-color: #4A525D;
+	color: #FAF6EE;
+	padding: 3rem;
+	font-size: small;
+	margin-top: 3em;
+}
+
+footer a {
+	color: #FAF6EE;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+	
+	header {
+		flex-direction: column;
+		text-align: center;
+		gap: 1rem;
+	}
+	main {
+		width: auto;
+		grid-template-columns: 1fr;
+		padding: 2rem;
+		gap: 3rem;
+	}
+
+	main div {
+		display: none;
+	}
+}
